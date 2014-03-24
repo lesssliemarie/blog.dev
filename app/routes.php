@@ -19,7 +19,7 @@ Route::get('/', function()
 Route::get('/sayhello/{name}', function($name)
 {
     $data = array(
-    	'name' => $name;
+    	'name' => $name
     	);
 
     return View::make('my-first-view')->with($data);
