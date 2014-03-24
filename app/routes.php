@@ -20,7 +20,7 @@ Route::get('/sayhello/{name}', function($name)
 {
     $data = array(
     	'name' => $name
-    	);
+    );
 
     return View::make('my-first-view')->with($data);
 });
@@ -42,7 +42,7 @@ Route::get('/rolldice/{guess?}', function($guess = 3)
 	$data = array(
 		'roll' => $roll,
 		'guess' => $guess
-		);
+	);
 	return View::make('roll-dice')->with($data);
 
 });
