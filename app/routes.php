@@ -36,11 +36,12 @@ Route::get('/portfolio', function()
 });
 
 
-Route::get('/rolldice', function()
+Route::get('/rolldice/{guess}', function($guess)
 {
 	$roll = rand(1, 6);
 	$data = array(
-		'roll' => $roll
+		'roll' => $roll,
+		'guess' => $guess
 		);
 	return View::make('roll-dice')->with($data);
 
