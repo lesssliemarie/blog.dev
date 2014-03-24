@@ -18,7 +18,11 @@ Route::get('/', function()
 
 Route::get('/sayhello/{name}', function($name)
 {
-    return View::make('my-first-view')->with('name', $name);
+    $data = array(
+    	'name' => $name;
+    	);
+
+    return View::make('my-first-view')->with($data);
 });
 
 Route::get('/resume', function()
