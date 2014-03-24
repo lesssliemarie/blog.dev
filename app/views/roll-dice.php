@@ -19,9 +19,9 @@ body {
 	<h2><?= $roll; ?></h2>
 
 	<? if ($roll == $guess): ?>
-	<h3 style="color: green">LUCKY GUESS!</h3>
+	<h1 style="color: green">LUCKY GUESS!</h1>
 	<? else: ?>
-	<h3 style="color: red">WRONG GUESS</h3>
+	<h1 style="color: red">WRONG GUESS</h1>
 	<? endif; ?>
 
 	<h1>Guessed Number:</h1>
