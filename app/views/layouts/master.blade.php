@@ -28,7 +28,6 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/home">Home</a></li>
             <li><a href="/portfolio">Portfolio</a></li>
             <li><a href="/blog">Blog</a></li>
             <li><a href="/resume">Resume</a></li>
