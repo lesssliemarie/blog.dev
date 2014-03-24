@@ -18,14 +18,7 @@ Route::get('/', function()
 
 Route::get('/sayhello/{name}', function($name)
 {
-    if ($name == "Chris")
-    {
-        return Redirect::to('/');
-    }
-    else
-    {
-        return "Hello, $name!";
-    }
+    return View::make('my-first-view')->with('name', $name);
 });
 
 Route::get('/resume', function()
