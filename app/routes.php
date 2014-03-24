@@ -34,3 +34,11 @@ Route::get('/portfolio', function()
 {
 	return 'This is my portfolio.';
 });
+
+
+Route::get('/rolldice', function()
+{
+	$roll = rand(1, 6);
+	return $roll;
+
+});
