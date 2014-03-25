@@ -11,6 +11,18 @@
 |
 */
 
+// Blog routes
+
+Route::get('/home', 'HomeController@showHome');
+
+Route::get('/portfolio', 'HomeController@showPortfolio');
+
+Route::get('/blog', 'HomeController@showBlog');
+
+Route::get('/resume', 'HomeController@showResume');
+
+// Exercise routes
+
 Route::get('/', function()
 {
 	return View::make('hello');
@@ -24,27 +36,6 @@ Route::get('/sayhello/{name}', function($name)
 
     return View::make('my-first-view')->with($data);
 });
-
-Route::get('/resume', function()
-{
-	return View::make('resume');
-});
-
-Route::get('/portfolio', function()
-{
-	return View::make('portfolio');
-});
-
-Route::get('/home', function()
-{
-	return View::make('home');
-});
-
-Route::get('/blog', function()
-{
-	return View::make('blog');
-});
-
 
 Route::get('/rolldice/{guess?}', function($guess = 3)
 {
