@@ -24,13 +24,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a id="cursive" class="navbar-brand" href="/home">lesssliemarie</a>
+          <a id="cursive" class="navbar-brand" href="{{{ action('HomeController@showHome') }}}">lesssliemarie</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/resume">Resume</a></li>
+            <li><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
+            <li><a href="{{{ action('HomeController@showBlog') }}}">Blog</a></li>
+            <li><a href="{{{ action('HomeController@showResume') }}}">Resume</a></li>
           </ul>
         </div>
       </div>
