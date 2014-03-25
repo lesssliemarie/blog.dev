@@ -44,7 +44,7 @@
     <!-- FOOTER -->
     <div id="footer">
       <div class="container">
-        <p class="text-muted">
+        <p>
           <a href="https://twitter.com/lesssliemarie" target="_blank"><i class="fa fa-twitter"></i></a>
           <a href="https://github.com/lesssliemarie" target="_blank"><i class="fa fa-github"></i></a>
           <a href="http://www.linkedin.com/in/leslietolbert" target="_blank"><i class="fa fa-linkedin"></i></a>
