@@ -30,7 +30,8 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
-		return 'POST, Stores the new post';
+		// return 'POST, Stores the new post';
+		return Redirect::back()->withInput();
 	}
 
 	/**
