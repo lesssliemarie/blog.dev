@@ -3,15 +3,23 @@
 @section('content')
 	<h1 class="cursive">Create a New Post</h1>
 	<hr>
-	<form role="form" method="POST" action="{{{ action('PostsController@store') }}}">
+	<form class="form-horizontal" role="form" method="POST" action="{{{ action('PostsController@store') }}}">
 		<div class="form-group">
-			<label for="title">Title:</label>
-			<input type="text" class="form-control" id="title" name="title" placeholder="Your title here..." value="{{{ Input::old('title') }}}">
+			<label for="title" class="col-sm-2 control-label">Title:</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="title" name="title" placeholder="Your title here..." value="{{{ Input::old('title') }}}">
+			</div>
 		</div>
 		<div class="form-group">
-			<label for="body">Body:</label>
-			<input type="text" class="form-control" id="body" name="body" placeholder="Type here..." value="{{{ Input::old('body') }}}">
+			<label for="body" class="col-sm-2 control-label">Body:</label>
+			<div class="col-sm-10">
+				<textarea class="form-control" id="body" name="body" rows="5">{{{ Input::old('body') }}}</textarea>
+			</div>
 		</div>
-		<button class="btn">Submit</button>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<button class="btn">Submit</button>
+			</div>
+		</div>
 	 </form>
 @stop
