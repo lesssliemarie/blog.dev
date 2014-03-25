@@ -21,6 +21,8 @@ Route::get('/blog', 'HomeController@showBlog');
 
 Route::get('/resume', 'HomeController@showResume');
 
+Route::resource('posts', 'PostsController');
+
 // Exercise routes
 
 Route::get('/', function()
