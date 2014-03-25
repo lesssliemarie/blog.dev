@@ -24,7 +24,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a id="cursive" class="navbar-brand" href="{{{ action('HomeController@showHome') }}}">lesssliemarie</a>
+          <a class="cursive navbar-brand" href="{{{ action('HomeController@showHome') }}}">lesssliemarie</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">

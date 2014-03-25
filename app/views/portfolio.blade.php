@@ -2,7 +2,7 @@
 
 @section('content')
     <div>
-        <h1 id="cursive">Portfolio</h1>
+        <h1 class="cursive">Portfolio</h1>
         <hr>
       </div>
       <div class="row">

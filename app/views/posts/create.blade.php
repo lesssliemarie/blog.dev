@@ -1,6 +1,8 @@
 @extends('layouts.master')
 
 @section('content')
+	<h1 class="cursive">Create a New Post</h1>
+	<hr>
 	<form role="form" method="POST" action="{{{ action('PostsController@store') }}}">
 		<div class="form-group">
 			<label for="title">Title:</label>
