@@ -9,7 +9,7 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
+		return 'GET, Shows list of all posts';
 	}
 
 	/**
@@ -19,7 +19,7 @@ class PostsController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+		return 'GET, Shows form for creating posts';
 	}
 
 	/**
@@ -29,7 +29,7 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		return 'POST, Stores the new post';
 	}
 
 	/**
@@ -40,7 +40,7 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		return 'GET, Shows a specific post';
 	}
 
 	/**
@@ -51,7 +51,7 @@ class PostsController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		//
+		return 'GET, Shows form for editing a specific post';
 	}
 
 	/**
@@ -62,7 +62,7 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		return 'PUT, Updates a specific post';
 	}
 
 	/**
@@ -73,7 +73,7 @@ class PostsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		return 'DELETE, Deletes a specific post';
 	}
 
 }
