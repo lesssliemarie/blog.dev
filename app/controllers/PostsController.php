@@ -19,7 +19,8 @@ class PostsController extends \BaseController {
 	 */
 	public function create()
 	{
-		return 'GET, Shows form for creating posts';
+		// return 'GET, Shows form for creating posts';
+		return View::make('posts.create');
 	}
 
 	/**
