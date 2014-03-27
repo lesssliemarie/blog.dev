@@ -10,7 +10,7 @@
               	<div class="blog-post">
 	              	<h2><a href="{{{ action('PostsController@show', $post->id) }}} ">{{{ $post->title }}}</a></h2>
 	              	<p>{{{ $post->body }}}</p>
-					<p class="end-post"><em>{{{ $post->created_at }}} | Author | Comments (0) | <span class="glyphicon glyphicon-thumbs-up"></span></em></p>
+					<p class="end-post"><em>{{{ $post->created_at }}} | Comments (0) | <span class="glyphicon glyphicon-thumbs-up"></span></em></p>
 				</div>
 			@endforeach
           </div>
