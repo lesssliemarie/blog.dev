@@ -10,7 +10,7 @@
               	<div class="blog-post">
 	              	<h2><a href="{{{ action('PostsController@show', $post->id) }}} ">{{{ $post->title }}}</a></h2>
 	              	<p>{{{ $post->body }}}</p>
-					<p class="end-post"><em>Month Day, Year | Author | Comments (0)</em></p>
+					<p class="end-post"><em>{{{ $post->created_at }}} | Author | Comments (0)</em></p>
 				</div>
 			@endforeach
           </div>

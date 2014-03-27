@@ -9,7 +9,7 @@
               	<div class="blog-post">
 	              	<h2>{{{ $post->title }}}</h2>
 	              	<p>{{{ $post->body }}}</p>
-					<p class="end-post"><em>Month Day, Year | Author | Comments (0)</em></p>
+					<p class="end-post"><em>{{{ $post->created_at }}} | Author | Comments (0)</em></p>
 				</div>
           </div>
           <div id="sidebar" class="col-md-3">
