@@ -85,3 +85,10 @@ i {
 	padding: 15px;
 	color: #FFFFFF;
 }
+
+#user-dashboard {
+	border: 1px solid #E79CF2;
+	border-radius: 4px;
+	padding: 15px;
+	margin-top: 20px;
+}
