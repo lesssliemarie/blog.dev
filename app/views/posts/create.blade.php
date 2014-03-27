@@ -20,7 +20,7 @@
 		</div>
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
-				<button class="btn">Create Post</button>
+				<button class="btn" type="submit">Create Post</button>
 				<a href="{{{ action('PostsController@index') }}}" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-arrow-left"></span> Back to all posts</a>
 			</div>
 		</div>
