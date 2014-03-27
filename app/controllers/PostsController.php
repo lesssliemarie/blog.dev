@@ -72,7 +72,9 @@ class PostsController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		return 'GET, Shows form for editing a specific post';
+		// return 'GET, Shows form for editing a specific post';
+		$post = Post::findOrFail($id);
+		return View::make('posts.edit')->with('post', $post);
 	}
 
 	/**
@@ -83,7 +85,23 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		return 'PUT, Updates a specific post';
+		$post = Post::findOrFail($id);
+		// create validator
+		$validator = Validator::make(Input::all(), Post::$rules);
+
+		// attempt validation
+		if ($validator->fails()) {
+			return Redirect::back()->withInput()->withErrors($validator);
+		} else {
+			Log::info(Input::all());
+
+			// saves to DB
+			$post->title = Input::get('title');
+			$post->body = Input::get('body');
+			$post->save();
+
+			return Redirect::action('PostsController@show', $post->id);
+		}
 	}
 
 	/**
