@@ -9,14 +9,14 @@
 	<div class="form-group">
 		{{ Form::label('title', 'Title', array('class' => 'col-sm-2 control-label')) }}
 		<div class="col-sm-10">
-			{{ Form::text('title', '', array('class' => 'form-control')) }}
+			{{ Form::text('title', null, array('class' => 'form-control')) }}
 			{{ $errors->has('title') ? $errors->first('title', '<p><span class="help-block">:message</span></p>') : '' }}
 		</div>
 	</div>
 	<div class="form-group">
 		{{ Form::label('body', 'Body', array('class' => 'col-sm-2 control-label')) }}
 		<div class="col-sm-10">
-			{{ Form::textarea('body', '', array('class' => 'form-control')) }}
+			{{ Form::textarea('body', null, array('class' => 'form-control')) }}
 			{{ $errors->has('body') ? $errors->first('body', '<p><span class="help-block">:message</span></p>') : '' }}
 		</div>
 	</div>
