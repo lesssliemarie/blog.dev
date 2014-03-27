@@ -11,6 +11,7 @@
 	              	<p>{{{ $post->body }}}</p>
 					<p class="end-post"><em>{{{ $post->created_at }}} | Author | Comments (0)</em></p>
 				</div>
+				<a href="{{{ action('PostsController@index') }}}" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-arrow-left"></span> Back to all posts</a>
           </div>
           <div id="sidebar" class="col-md-3">
             <div id="sidebar-inset">
