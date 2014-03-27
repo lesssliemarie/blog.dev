@@ -10,14 +10,20 @@
               	<div class="blog-post">
 	              	<h2><a href="{{{ action('PostsController@show', $post->id) }}} ">{{{ $post->title }}}</a></h2>
 	              	<p>{{{ $post->body }}}</p>
-					<p class="end-post"><em>{{{ $post->created_at }}} | Author | Comments (0)</em></p>
+					<p class="end-post"><em>{{{ $post->created_at }}} | Author | Comments (0) | <span class="glyphicon glyphicon-thumbs-up"></span></em></p>
 				</div>
 			@endforeach
           </div>
           <div id="sidebar" class="col-md-3">
             <div id="sidebar-inset">
-              <h4>About This Blog</h4>
-              <p>Whatever Helvetica pour-over, YOLO 8-bit Brooklyn distillery Cosby sweater lo-fi mustache stumptown semiotics tousled. Cliche aesthetic actually, fixie cardigan brunch McSweeney's Marfa pop-up distillery ethnic artisan irony vinyl hella.</p>
+	        	<h4>About This Blog</h4>
+	        	<p>Whatever Helvetica pour-over, YOLO 8-bit Brooklyn distillery Cosby sweater lo-fi mustache stumptown semiotics tousled. Cliche aesthetic actually, fixie cardigan brunch McSweeney's Marfa pop-up distillery ethnic artisan irony vinyl hella.</p>
+	        </div>
+	        <div id="user-dashboard">
+	         	<h4>User Dashboard</h4>
+				<p>
+				<a href="{{{ action('PostsController@create')}}}"><span class="glyphicon glyphicon-plus"></span> Create New Post</a>
+            	</p>
             </div>
             <h4>Archives</h4>
             <ul class="list-unstyled">
