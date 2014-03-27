@@ -53,7 +53,7 @@ class PostsController extends \BaseController {
 	{
 		// return 'GET, Shows a specific post';
 		$post = Post::findOrFail($id);
-		return View::make('posts.show')->with(array('post' => $post));
+		return View::make('posts.show')->with('post', $post);
 	}
 
 	/**
