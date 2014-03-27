@@ -8,7 +8,7 @@
           <div class="col-md-9">
             @foreach ($posts as $post)
               	<div class="blog-post">
-	              	<h2>{{{ $post->title }}}</h2>
+	              	<h2><a href="{{{ action('PostsController@show', $post->id) }}} ">{{{ $post->title }}}</a></h2>
 	              	<p>{{{ $post->body }}}</p>
 					<p class="end-post"><em>Month Day, Year | Author | Comments (0)</em></p>
 				</div>
