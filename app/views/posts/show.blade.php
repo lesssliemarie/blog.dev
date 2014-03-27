@@ -9,7 +9,7 @@
               	<div class="blog-post">
 	              	<h2>{{{ $post->title }}}</h2>
 	              	<p>{{{ $post->body }}}</p>
-					<p class="end-post"><em>{{{ $post->created_at }}} | Author | Comments (0)</em></p>
+					<p class="end-post"><em>{{{ $post->created_at }}} | Author | Comments (0) | <span class="glyphicon glyphicon-thumbs-up"></span></em></p>
 				</div>
 				<a href="{{{ action('PostsController@index') }}}" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-arrow-left"></span> Back to all posts</a>
           </div>
