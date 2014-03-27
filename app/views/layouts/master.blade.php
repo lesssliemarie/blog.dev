@@ -11,7 +11,7 @@
     <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="/css/blog.css">
 </head>
 <body>
 	<!-- NAVBAR -->
@@ -57,6 +57,6 @@
     <!-- BOTTOM SCRIPT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="../js/holder.js"></script>
+    <script src="/js/holder.js"></script>
 </body>
 </html>
