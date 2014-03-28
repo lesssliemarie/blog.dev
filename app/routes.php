@@ -13,7 +13,7 @@
 
 // Blog routes
 
-Route::get('/home', 'HomeController@showHome');
+Route::get('/', 'HomeController@showHome');
 
 Route::get('/portfolio', 'HomeController@showPortfolio');
 
@@ -25,10 +25,10 @@ Route::resource('/posts', 'PostsController');
 
 // Exercise routes
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+// Route::get('/', function()
+// {
+// 	return View::make('hello');
+// });
 
 Route::get('/sayhello/{name}', function($name)
 {
