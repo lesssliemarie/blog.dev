@@ -37,6 +37,7 @@ class PostsController extends \BaseController {
 
 		// attempt validation
 		if ($validator->fails()) {
+			Session::flash('errorMessage', 'Post save unsuccessful. See form errors.');
 			return Redirect::back()->withInput()->withErrors($validator);
 		} else {
 			Log::info(Input::all());
@@ -46,6 +47,7 @@ class PostsController extends \BaseController {
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
 			$post->save();
+			Session::flash('successMessage', 'Post saved successfully.');
 
 			return Redirect::action('PostsController@index');
 		}
@@ -91,6 +93,7 @@ class PostsController extends \BaseController {
 
 		// attempt validation
 		if ($validator->fails()) {
+			Session::flash('errorMessage', 'Post save unsuccessful. See form errors.');
 			return Redirect::back()->withInput()->withErrors($validator);
 		} else {
 			Log::info(Input::all());
@@ -99,6 +102,7 @@ class PostsController extends \BaseController {
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
 			$post->save();
+			Session::flash('successMessage', 'Post saved successfully.');
 
 			return Redirect::action('PostsController@show', $post->id);
 		}
@@ -114,7 +118,12 @@ class PostsController extends \BaseController {
 	{
 		// return 'DELETE, Deletes a specific post';
 		Post::findOrFail($id)->delete();
-		return Redirect::action('PostsController@index');
+		if (Post::find($id)) {
+			Session::flash('errorMessage', 'Post delete unsuccessful.');
+		} else {
+			Session::flash('successMessage', 'Post deleted successfully.');
+			Return Redirect::action('PostsController@index');
+		}
 	}
 
 }
