@@ -9,7 +9,7 @@
               	<div class="blog-post">
 	              	<h2>{{{ $post->title }}}</h2>
 	              	<p>{{{ $post->body }}}</p>
-				          <p class="end-post"><em>{{{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS, Y @ h:i:s A') }}} | Comments (0) | <span class="glyphicon glyphicon-thumbs-up"></span></em>| <a href="{{{ action('PostsController@edit', $post->id) }}}"><span class="glyphicon glyphicon-pencil"></span></a> | <a href="{{{ action('PostsController@destroy', $post->id) }}}"><span class="glyphicon glyphicon-remove" id="btnDeletePost"></span></p>
+				          <p class="end-post"><em>{{{ $post->created_at->format('l, F jS, Y') }}} | Comments (0) | <span class="glyphicon glyphicon-thumbs-up"></span></em>| <a href="{{{ action('PostsController@edit', $post->id) }}}"><span class="glyphicon glyphicon-pencil"></span></a> | <a href="{{{ action('PostsController@destroy', $post->id) }}}"><span class="glyphicon glyphicon-remove" id="btnDeletePost"></span></p>
 				        </div>
 				    <a href="{{{ action('PostsController@index') }}}" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-arrow-left"></span> Back to all posts</a>
             {{ Form::model($post, array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE', 'id' => 'formDeletePost')) }}
