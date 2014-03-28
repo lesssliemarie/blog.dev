@@ -39,10 +39,10 @@
     <!-- UNIQUE PAGE CONTENT --> 
     <div class="container">
     	@if (Session::has('successMessage'))
-        <div class="alert alert-success session-error">{{{ Session::get('successMessage') }}}</div>
+        <div class="alert alert-info session-error">{{{ Session::get('successMessage') }}}</div>
       @endif
       @if (Session::has('errorMessage'))
-        <div class="alert alert-danger session-error">{{{ Session::get('errorMessage') }}}</div>
+        <div class="alert alert-warning session-error">{{{ Session::get('errorMessage') }}}</div>
       @endif
       @yield('content')
     </div>
