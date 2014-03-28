@@ -39,10 +39,10 @@
     <!-- UNIQUE PAGE CONTENT --> 
     <div class="container">
     	@if (Session::has('successMessage'))
-        <div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
+        <div class="alert alert-success session-error">{{{ Session::get('successMessage') }}}</div>
       @endif
       @if (Session::has('errorMessage'))
-        <div class="alert alert-danger">{{{ Session::get('errorMessage') }}}</div>
+        <div class="alert alert-danger session-error">{{{ Session::get('errorMessage') }}}</div>
       @endif
       @yield('content')
     </div>
@@ -65,6 +65,13 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="/js/holder.js"></script>
     <script src="/js/bootbox.min.js"></script>
+
+    <script>
+      setTimeout(function() {
+        $('.session-error').fadeOut(700);
+      }, 2000);
+
+    </script>
     @yield('bottomscript')
 </body>
 </html>
