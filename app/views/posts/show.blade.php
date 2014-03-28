@@ -9,10 +9,11 @@
               	<div class="blog-post">
 	              	<h2>{{{ $post->title }}}</h2>
 	              	<p>{{{ $post->body }}}</p>
-					<p class="end-post"><em>{{{ $post->created_at }}} | Comments (0) | <span class="glyphicon glyphicon-thumbs-up"></span></em>| <a href="{{{ action('PostsController@edit', $post->id) }}}"><span class="glyphicon glyphicon-pencil"></span></a>
-					</p>
-				</div>
-				<a href="{{{ action('PostsController@index') }}}" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-arrow-left"></span> Back to all posts</a>
+				          <p class="end-post"><em>{{{ $post->created_at }}} | Comments (0) | <span class="glyphicon glyphicon-thumbs-up"></span></em>| <a href="{{{ action('PostsController@edit', $post->id) }}}"><span class="glyphicon glyphicon-pencil"></span></a> | <a href="{{{ action('PostsController@destroy', $post->id) }}}"><span class="glyphicon glyphicon-remove" id="btnDeletePost"></span></p>
+				        </div>
+				    <a href="{{{ action('PostsController@index') }}}" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-arrow-left"></span> Back to all posts</a>
+            {{ Form::model($post, array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE', 'id' => 'formDeletePost')) }}
+            {{ Form::close() }}
           </div>
           <div id="sidebar" class="col-md-3">
             <div id="sidebar-inset">
@@ -30,4 +31,18 @@
           </div>
         </div>
     </div>
+@stop
+
+@section('bottomscript')
+  <script>
+  $('#btnDeletePost').click(function(e) {
+    e.preventDefault();
+    bootbox.confirm('Are you sure you want to delete this post?', function(result) {
+      if (result) {
+        $('#formDeletePost').submit();
+      }
+    });
+  });
+
+  </script>
 @stop
