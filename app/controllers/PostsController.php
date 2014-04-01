@@ -23,7 +23,9 @@ class PostsController extends \BaseController {
 		if (is_null($search)) {
 			$posts = $query->paginate(4);		
 		} else {
-			$posts = $query->where('title', 'LIKE', "%{$search}%")->paginate(4);
+			$posts = $query->where('title', 'LIKE', "%{$search}%")
+						   ->orWhere('body', 'LIKE', "%{$search}%")
+						   ->paginate(4);
 		}
 		// return 'GET, Shows list of all posts';	
 		return View::make('posts.index')->with('posts', $posts);		
