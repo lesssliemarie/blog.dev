@@ -9,6 +9,9 @@ class Post extends BaseModel {
     	'body' => 'required|max:10000'
     );
 
+	/*
+	*Relationship for belongsTo user
+	*/
     public function user()
 	{
 	    return $this->belongsTo('User');
