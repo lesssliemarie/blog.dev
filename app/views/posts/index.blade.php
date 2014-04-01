@@ -13,14 +13,14 @@
 					       <p class="end-post"><em>{{{ $post->created_at->format('l, F jS, Y') }}} | Comments (0) | <span class="glyphicon glyphicon-thumbs-up"></span></em></p>
 				        </div>
 			       @endforeach
-            <p>{{ $posts->links() }}</p>
+            <p>{{ $posts->appends(array('search' => Input::get('search')))->links() }}</p>
           </div>
 
           <div id="sidebar" class="col-md-3">
               <div class="form-group">
                 {{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET', 'class' => 'form-inline')) }}
-                {{ Form::text('search', null, array('class' => 'form-control'))}}
-                {{ Form::submit('Search >>', array('class' => 'btn btn-primary'))}}
+                {{ Form::text('search', null, array('class' => 'form-control'))}}      
+                {{ Form::submit("Search >>", array('class' => 'btn btn-primary'))}}
                 {{ Form::close() }}
               </div>
             <div id="sidebar-inset">
