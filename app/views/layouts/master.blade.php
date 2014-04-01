@@ -55,6 +55,7 @@
           <a href="https://github.com/lesssliemarie" target="_blank"><i class="fa fa-github"></i></a>
           <a href="http://www.linkedin.com/in/leslietolbert" target="_blank"><i class="fa fa-linkedin"></i></a>
           <a href="mailto:lesssliemarie@gmail.com"><i class="fa fa-envelope"></i></a>
+          <a href="{{{ action('HomeController@showLogin')}}}" id="login-footer"><i class="fa fa-user"></i> Login</a>
         </p>
       </div>
     </div>
