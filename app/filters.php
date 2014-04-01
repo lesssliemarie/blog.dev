@@ -44,6 +44,13 @@ Route::filter('auth.basic', function()
 	return Auth::basic();
 });
 
+Route::filter('posts.protect', function()
+{
+	if (Auth::user()->id != $post->user_id) {
+		return Redirect::action('HomeController@invalidUser');
+	}
+});
+
 /*
 |--------------------------------------------------------------------------
 | Guest Filter
