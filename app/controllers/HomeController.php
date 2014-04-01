@@ -67,4 +67,9 @@ class HomeController extends BaseController {
 		Session::flash('successMessage', 'Logout successful.');
 		return Redirect::action('PostsController@index');
 	}
+
+	public function accessDenied()
+	{
+		return View::make('accessDenied');
+	}
 }
