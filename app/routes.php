@@ -25,6 +25,6 @@ Route::get('/login', 'HomeController@showLogin');
 
 Route::post('/login', 'HomeController@doLogin');
 
-oute::get('/logout', 'HomeController@logout');
+Route::get('/logout', 'HomeController@logout');
 
 Route::resource('/posts', 'PostsController');
