@@ -18,9 +18,15 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		// return 'GET, Shows list of all posts';
-		$posts = Post::orderBy('created_at', 'desc')->paginate(4);
-		return View::make('posts.index')->with('posts', $posts);
+		$search = Input::get('search');
+		$query = Post::orderBy('created_at', 'desc');
+		if (is_null($search)) {
+			$posts = $query->paginate(4);		
+		} else {
+			$posts = $query->where('title', 'LIKE', "%{$search}%")->paginate(4);
+		}
+		// return 'GET, Shows list of all posts';	
+		return View::make('posts.index')->with('posts', $posts);		
 	}
 
 	/**
@@ -131,8 +137,15 @@ class PostsController extends \BaseController {
 			Session::flash('errorMessage', 'Post delete unsuccessful.');
 		} else {
 			Session::flash('successMessage', 'Post deleted successfully.');
-			Return Redirect::action('PostsController@index');
+			return Redirect::action('PostsController@index');
 		}
 	}
+
+	// public function search($title)
+	// {
+	// 	$post = DB::table('posts')->where('title', $title)->first();
+	// 	$id = $post->id;
+	// 	return View::make('posts.show', $post->id);
+	// }
 
 }
