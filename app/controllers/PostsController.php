@@ -10,8 +10,8 @@ class PostsController extends \BaseController {
 		// Run an authentication filter before all methods except index and show
 		$this->beforeFilter('auth', array('except' => array('index', 'show')));
 
-		$this->beforeFilter('post.protect', array('only' => array('edit', 'update', 'destroy');
-
+		$this->beforeFilter('posts.protect', array('only' => array('edit', 'update', 'destroy')));
+	}
 	/**
 	 * Display a listing of the resource.
 	 *
