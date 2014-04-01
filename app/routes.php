@@ -27,4 +27,6 @@ Route::post('/login', 'HomeController@doLogin');
 
 Route::get('/logout', 'HomeController@logout');
 
+Route::get('/accessDenied', 'HomeController@accessDenied');
+
 Route::resource('/posts', 'PostsController');
