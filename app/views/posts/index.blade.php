@@ -27,12 +27,15 @@
 	        	  <h4>About This Blog</h4>
 	        	  <p>Whatever Helvetica pour-over, YOLO 8-bit Brooklyn distillery Cosby sweater lo-fi mustache stumptown semiotics tousled. Cliche aesthetic actually, fixie cardigan brunch McSweeney's Marfa pop-up distillery ethnic artisan irony vinyl hella.</p>
 	          </div>
-	          <div id="user-dashboard">
-  	         	<h4>User Dashboard</h4>
-  				      <p>
-  				      <a href="{{{ action('PostsController@create')}}}"><span class="glyphicon glyphicon-plus"></span> Create New Post</a>
-              	</p>
-            </div>
+	          @if (Auth::check())
+              <div id="user-dashboard">
+    	         	<h4>User Dashboard</h4>
+    				      <p>
+    				      <a href="{{{ action('PostsController@create')}}}"><span class="glyphicon glyphicon-plus"></span> Create New Post</a>
+                	</p>
+              </div>
+            @else
+            @endif
             <h4>Archives</h4>
             <ul class="list-unstyled">
               <li><a href="">Post Title/Date</a></li>
