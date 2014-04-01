@@ -117,7 +117,6 @@ class PostsController extends \BaseController {
 			Log::info(Input::all());
 
 			// saves to DB
-			$post->user_id = 1;
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
 			$post->save();
