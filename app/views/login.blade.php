@@ -20,12 +20,6 @@
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="checkbox col-sm-2 control-label"></label>
-		<div class="col-sm-10">
-			<input type="checkbox" value="Remember Me"> Remember Me
-		</div>
-	</div>
-	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-10">
 			{{ Form::submit('Login', array('class' => 'btn btn-primary'))}}
 		</div>
