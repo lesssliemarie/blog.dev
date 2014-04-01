@@ -30,7 +30,6 @@
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-10">
 			{{ Form::submit('Login', array('class' => 'btn btn-primary'))}}
-			<a href="{{{ action('PostsController@index') }}}" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-arrow-left"></span> Back to all posts</a>
 		</div>
 	</div>
 
