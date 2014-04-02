@@ -5,7 +5,7 @@
 	<hr>
 
 <!-- START FORM -->
-	{{ Form::open(array('action' => 'PostsController@store', 'class' => 'form-horizontal')) }}
+	{{ Form::open(array('action' => 'PostsController@store', 'files' => true, class' => 'form-horizontal')) }}
 	<div class="form-group">
 		{{ Form::label('title', 'Title', array('class' => 'col-sm-2 control-label')) }}
 		<div class="col-sm-10">
