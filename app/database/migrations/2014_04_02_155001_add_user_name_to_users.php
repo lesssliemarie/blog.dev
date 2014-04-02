@@ -27,7 +27,7 @@ class AddUserNameToUsers extends Migration {
 	{
 		//
 		Schema::table('users', function($table) {
-		    $table->dropColumn('user_id');
+		    $table->dropColumn('username');
 		});
 	}
 
