@@ -24,7 +24,7 @@
 	<div class="form-group">
 		<label class="col-sm-2 control-label">Current Photo:</label>
 		<div class="col-sm-10">
-			<img src="{{ $post->image }}"></p>
+			<img src="/{{ $post->image }}"></p>
 		</div>
 	</div>
 	@else

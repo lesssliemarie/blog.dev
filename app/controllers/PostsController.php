@@ -70,7 +70,7 @@ class PostsController extends \BaseController {
 			if (Input::hasFile('image')) {
 				// create public/uploads folder path
 				$unqiuePath = str_random(8);
-				$destinationPath = 'uploads/' . $unqiuePath . '/';
+				$destinationPath = public_path() . '/uploads/' . $unqiuePath . '/';
 				// get image name
 				$fileName = Input::file('image')->getClientOriginalName();
 				// move file to path
@@ -141,7 +141,7 @@ class PostsController extends \BaseController {
 			if (Input::hasFile('image')) {
 				// create public/uploads folder path
 				$unqiuePath = str_random(8);
-				$destinationPath = public_path() . 'uploads/' . $unqiuePath . '/';
+				$destinationPath = public_path() . '/uploads/' . $unqiuePath . '/';
 				// get image name
 				$fileName = Input::file('image')->getClientOriginalName();
 				// move file to path
