@@ -10,7 +10,7 @@
               	<div class="blog-post">
 	              	<h2><a href="{{{ action('PostsController@show', $post->id) }}} ">{{{ $post->title }}}</a></h2>
 	              	<p>{{{ $post->body }}}</p>
-					       <p class="end-post"><em>{{{ $post->created_at->format('l, F jS, Y') }}} | {{{ Auth::user()->username }}} </em></p>
+					       <p class="end-post"><em>{{{ $post->created_at->format('l, F jS, Y') }}} | Author </em></p>
 				        </div>
 			       @endforeach
             <p>{{ $posts->appends(array('search' => Input::get('search')))->links() }}</p>

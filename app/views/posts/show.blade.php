@@ -13,7 +13,7 @@
                   @else
                   @endif
 	              	<p>{{{ $post->body }}}</p>
-				          <p class="end-post"><em>{{{ $post->created_at->format('l, F jS, Y') }}} | {{{ Auth::user()->username }}} | <a href="{{{ action('PostsController@edit', $post->id) }}}"><span class="glyphicon glyphicon-pencil"></span></a> | <a href="{{{ action('PostsController@destroy', $post->id) }}}"><span class="glyphicon glyphicon-remove" id="btnDeletePost"></span></em></p>
+				          <p class="end-post"><em>{{{ $post->created_at->format('l, F jS, Y') }}} | Author | <a href="{{{ action('PostsController@edit', $post->id) }}}"><span class="glyphicon glyphicon-pencil"></span></a> | <a href="{{{ action('PostsController@destroy', $post->id) }}}"><span class="glyphicon glyphicon-remove" id="btnDeletePost"></span></em></p>
 				        </div>
 				    <a href="{{{ action('PostsController@index') }}}" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-arrow-left"></span> Back to all posts</a>
             {{ Form::model($post, array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE', 'id' => 'formDeletePost')) }}
