@@ -8,6 +8,10 @@
           <div class="col-md-9">
               	<div class="blog-post">
 	              	<h2>{{{ $post->title }}}</h2>
+                  @if ($post->image)
+                  <img src="/{{ $post->image }}">
+                  @else
+                  @endif
 	              	<p>{{{ $post->body }}}</p>
 				          <p class="end-post"><em>{{{ $post->created_at->format('l, F jS, Y') }}} | Comments (0) | <span class="glyphicon glyphicon-thumbs-up"></span></em>| <a href="{{{ action('PostsController@edit', $post->id) }}}"><span class="glyphicon glyphicon-pencil"></span></a> | <a href="{{{ action('PostsController@destroy', $post->id) }}}"><span class="glyphicon glyphicon-remove" id="btnDeletePost"></span></p>
 				        </div>
