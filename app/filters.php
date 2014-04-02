@@ -46,8 +46,10 @@ Route::filter('auth.basic', function()
 
 Route::filter('posts.protect', function()
 {
+	$param = Request::segment(2);
+	$post = Post::find($param);
 	if (Auth::user()->id != $post->user_id) {
-		return Redirect::action('HomeController@invalidUser');
+		return Redirect::action('HomeController@accessDenied');
 	}
 });
 
