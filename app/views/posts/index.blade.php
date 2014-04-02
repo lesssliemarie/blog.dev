@@ -29,7 +29,7 @@
 	          </div>
 	          @if (Auth::check())
               <div id="user-dashboard">
-    	         	<h4>User Dashboard</h4>
+    	         	<h4>{{{ Auth::user()->username }}}'s User Dashboard</h4>
     				      <p>
     				      <a href="{{{ action('PostsController@create')}}}"><span class="glyphicon glyphicon-plus"></span> Create New Post</a>
                 	</p>
