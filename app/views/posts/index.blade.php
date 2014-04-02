@@ -10,7 +10,7 @@
               	<div class="blog-post">
 	              	<h2><a href="{{{ action('PostsController@show', $post->id) }}} ">{{{ $post->title }}}</a></h2>
 	              	<p>{{{ $post->body }}}</p>
-					       <p class="end-post"><em>{{{ $post->created_at->format('l, F jS, Y') }}} | Comments (0) | <span class="glyphicon glyphicon-thumbs-up"></span></em></p>
+					       <p class="end-post"><em>{{{ $post->created_at->format('l, F jS, Y') }}} | {{{ Auth::user()->username }}} </em></p>
 				        </div>
 			       @endforeach
             <p>{{ $posts->appends(array('search' => Input::get('search')))->links() }}</p>
@@ -29,7 +29,8 @@
 	          </div>
 	          @if (Auth::check())
               <div id="user-dashboard">
-    	         	<h4>{{{ Auth::user()->username }}}'s User Dashboard</h4>
+    	         	<h4>User Dashboard:</h4>
+                <h6><em>Logged in as: {{{ Auth::user()->username }}}</em></h6>
     				      <p>
     				      <a href="{{{ action('PostsController@create')}}}"><span class="glyphicon glyphicon-plus"></span> Create New Post</a>
                 	</p>
