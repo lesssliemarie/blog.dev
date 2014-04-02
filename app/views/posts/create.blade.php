@@ -21,6 +21,12 @@
 		</div>
 	</div>
 	<div class="form-group">
+		{{ Form::label('image', 'Upload Image', array('class' => 'col-sm-2 control-label')) }}
+		<div class="col-sm-10">
+			{{ Form::file('image', null, array('class' => 'form-control')) }}
+		</div>
+	</div>
+	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-10">
 			{{ Form::submit('Create Post', array('class' => 'btn btn-primary'))}}
 			<a href="{{{ action('PostsController@index') }}}" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-arrow-left"></span> Back to all posts</a>
