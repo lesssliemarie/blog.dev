@@ -5,7 +5,7 @@
 	<hr>
 
 <!-- START FORM -->
-	{{ Form::open(array('action' => 'PostsController@store', 'files' => true, class' => 'form-horizontal')) }}
+	{{ Form::open(array('action' => 'PostsController@store', 'files' => true, 'class' => 'form-horizontal')) }}
 	<div class="form-group">
 		{{ Form::label('title', 'Title', array('class' => 'col-sm-2 control-label')) }}
 		<div class="col-sm-10">
@@ -23,7 +23,7 @@
 	<div class="form-group">
 		{{ Form::label('image', 'Upload Image', array('class' => 'col-sm-2 control-label')) }}
 		<div class="col-sm-10">
-			{{ Form::file('image', null, array('class' => 'form-control')) }}
+			{{ Form::file('image', array('class' => 'form-control')) }}
 		</div>
 	</div>
 	<div class="form-group">
