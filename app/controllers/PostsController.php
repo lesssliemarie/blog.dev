@@ -65,6 +65,22 @@ class PostsController extends \BaseController {
 			$post->user_id = Auth::user()->id;
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
+			
+			// create image file path
+			if (Input::hasFile('image')) {
+				// create public/uploads folder path
+				$unqiuePath = str_random(8);
+				$destinationPath = 'uploads/' . $unqiuePath . '/';
+				// get image name
+				$fileName = Input::file('image')->getClientOriginalName();
+				// move file to path
+				Input::file('image')->move($destinationPath, $fileName);
+				// create full path for DB
+				$fullPath = $destinationPath . $fileName;
+				// save image path to DB
+				$post->image = $fullPath;
+			}
+
 			$post->save();
 			Session::flash('successMessage', 'Post saved successfully.');
 
@@ -120,6 +136,22 @@ class PostsController extends \BaseController {
 			// saves to DB
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
+
+			// create image file path
+			if (Input::hasFile('image')) {
+				// create public/uploads folder path
+				$unqiuePath = str_random(8);
+				$destinationPath = public_path() . 'uploads/' . $unqiuePath . '/';
+				// get image name
+				$fileName = Input::file('image')->getClientOriginalName();
+				// move file to path
+				Input::file('image')->move($destinationPath, $fileName);
+				// create full path for DB
+				$fullPath = $destinationPath . $fileName;
+				// save image path to DB
+				$post->image = $fullPath;
+			}
+
 			$post->save();
 			Session::flash('successMessage', 'Post saved successfully.');
 
