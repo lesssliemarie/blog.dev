@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('topscript')
+	<script src="/ckeditor/ckeditor.js"></script>
+@stop
+
 @section('content')
 	<h1 class="cursive">Edit Post</h1>
 	<hr>
@@ -24,7 +28,7 @@
 	<div class="form-group">
 		<label class="col-sm-2 control-label">Current Photo:</label>
 		<div class="col-sm-10">
-			<img src="/{{ $post->image }}"></p>
+			<img src="{{ $post->image }}"></p>
 		</div>
 	</div>
 	@else
@@ -41,6 +45,12 @@
 			<a href="{{{ action('PostsController@index') }}}" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-arrow-left"></span> Back to all posts</a>
 		</div>
 	</div>
+
+	<script>
+	    // Replace the <textarea id="editor1"> with a CKEditor
+	    // instance, using default configuration.
+	    CKEDITOR.replace( 'body' );
+	</script>
 
 	{{ Form::close() }}
 <!-- END FORM -->
