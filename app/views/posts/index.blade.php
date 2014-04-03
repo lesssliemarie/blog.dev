@@ -9,8 +9,8 @@
             @foreach ($posts as $post)
               	<div class="blog-post">
 	              	<h2><a href="{{{ action('PostsController@show', $post->id) }}} ">{{{ $post->title }}}</a></h2>
-	              	<p>{{{ $post->body }}}</p>
-					       <p class="end-post"><em>{{{ $post->created_at->format('l, F jS, Y') }}} | Author </em></p>
+	              	<p>{{ Str::words($post->body, 20) }}</p>
+					       <p class="end-post"><em>{{{ $post->created_at->format('l, F jS, Y') }}} | {{{ $post->user->username}}} </em></p>
 				        </div>
 			       @endforeach
             <p>{{ $posts->appends(array('search' => Input::get('search')))->links() }}</p>
