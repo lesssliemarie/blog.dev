@@ -18,10 +18,4 @@ class Post extends BaseModel {
 	    return $this->belongsTo('User');
 	}
 
-    public function deleteImage()
-    {
-        File::delete(public_path() . "/uploads/" . $this->image)
-        $this->image = null;
-    }
-
 }
