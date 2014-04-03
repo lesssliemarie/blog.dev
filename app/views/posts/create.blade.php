@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('topscript')
+	<script src="/ckeditor/ckeditor.js"></script>
+@stop
+
 @section('content')
 	<h1 class="cursive">Create a New Post</h1>
 	<hr>
@@ -33,6 +37,11 @@
 		</div>
 	</div>
 
+	<script>
+	    // Replace the <textarea id="editor1"> with a CKEditor
+	    // instance, using default configuration.
+	    CKEDITOR.replace( 'body' );
+	</script>
 	{{ Form::close() }}
 <!-- END FORM -->
 @stop
