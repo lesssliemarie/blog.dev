@@ -64,7 +64,9 @@ class PostsController extends \BaseController {
 			$post = new Post();
 			$post->user_id = Auth::user()->id;
 			$post->title = Input::get('title');
-			$post->body = Input::get('body');
+			$purifier = new HTMLPurifier();
+    		$clean_html = $purifier->purify(Input::get('body'));
+			$post->body = $clean_html;
 			
 			// create image file path
 			if (Input::hasFile('image')) {
@@ -135,7 +137,9 @@ class PostsController extends \BaseController {
 
 			// saves to DB
 			$post->title = Input::get('title');
-			$post->body = Input::get('body');
+			$purifier = new HTMLPurifier();
+    		$clean_html = $purifier->purify(Input::get('body'));
+			$post->body = $clean_html;
 
 			// create image file path
 			if (Input::hasFile('image')) {
