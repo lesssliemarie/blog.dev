@@ -18,4 +18,18 @@ class Post extends BaseModel {
 	    return $this->belongsTo('User');
 	}
 
+    public static function uploadImage($image)
+    {
+        $uniquePath = str_random(8);
+        $destinationPath = public_path() . '/uploads/' . $uniquePath . '/';
+        // get image name
+        $fileName = $image->getClientOriginalName();
+        // move file to path
+        $image->move($destinationPath, $fileName);
+        // create full path for DB
+        $fullPath = '/uploads/' . $uniquePath . '/' . $fileName;
+        // save image path to DB
+        return $fullPath;
+    }
+
 }

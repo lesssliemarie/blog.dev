@@ -70,17 +70,8 @@ class PostsController extends \BaseController {
 			
 			// create image file path
 			if (Input::hasFile('image')) {
-				// create public/uploads folder path
-				$uniquePath = str_random(8);
-				$destinationPath = public_path() . '/uploads/' . $uniquePath . '/';
-				// get image name
-				$fileName = Input::file('image')->getClientOriginalName();
-				// move file to path
-				Input::file('image')->move($destinationPath, $fileName);
-				// create full path for DB
-				$fullPath = '/uploads/' . $uniquePath . '/' . $fileName;
-				// save image path to DB
-				$post->image = $fullPath;
+				$image = Input::file('image');
+				$post->image = Post::uploadImage($image);
 			}
 
 			$post->save();
@@ -143,17 +134,8 @@ class PostsController extends \BaseController {
 
 			// create image file path
 			if (Input::hasFile('image')) {
-				// create public/uploads folder path
-				$uniquePath = str_random(8);
-				$destinationPath = public_path() . '/uploads/' . $uniquePath . '/';
-				// get image name
-				$fileName = Input::file('image')->getClientOriginalName();
-				// move file to path
-				Input::file('image')->move($destinationPath, $fileName);
-				// create full path for DB
-				$fullPath = '/uploads/' . $uniquePath . '/' . $fileName;
-				// save image path to DB
-				$post->image = $fullPath;
+				$image = Input::file('image');
+				$post->image = Post::uploadImage($image);
 			}
 
 			$post->save();
