@@ -19,6 +19,7 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
+
 		$search = Input::get('search');
 		$query = Post::with('user')->orderBy('created_at', 'desc');
 		if (is_null($search)) {
