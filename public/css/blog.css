@@ -102,6 +102,11 @@ i {
 	color: #FF0000;
 }
 
+/* RESUME */
+.resume-row {
+	margin-bottom: 20px;
+}
+
 /* ACCESS DENIED PAGE */
 .fa-ban {
 	color: #FF0000;
