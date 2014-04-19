@@ -7,10 +7,10 @@
     <title>Leslie Tolbert &mdash; Hello!</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/blog.css">
 
     @yield('topscript')
@@ -60,16 +60,14 @@
           <a href="mailto:lesssliemarie@gmail.com"><i class="fa fa-envelope"></i></a>
           @if (Auth::check())
             <a href="{{{ action('HomeController@logout')}}}" id="login-footer"><i class="fa fa-user"></i> Logout</a>
-          @else
-            <a href="{{{ action('HomeController@showLogin')}}}" id="login-footer"><i class="fa fa-user"></i> Login</a>
           @endif
         </p>
       </div>
     </div>
 
     <!-- BOTTOM SCRIPT -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <script src="/js/holder.js"></script>
     <script src="/js/bootbox.min.js"></script>
 
