@@ -12,6 +12,7 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <link href="/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/blog.css">
+    <link src="/css/animate.css" rel="stylesheet">
 
     @yield('topscript')
     
@@ -31,9 +32,9 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
-            <li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
-            <li><a href="{{{ action('HomeController@showResume') }}}">Resume</a></li>
+            <li><a href="{{{ action('HomeController@showPortfolio') }}}">portfolio</a></li>
+            <li><a href="{{{ action('PostsController@index') }}}">blog</a></li>
+            <li><a href="{{{ action('HomeController@showResume') }}}">r&eacute;sum&eacute;</a></li>
           </ul>
         </div>
       </div>
@@ -57,9 +58,12 @@
           <a href="https://twitter.com/lesssliemarie" target="_blank"><i class="fa fa-twitter"></i></a>
           <a href="https://github.com/lesssliemarie" target="_blank"><i class="fa fa-github"></i></a>
           <a href="http://www.linkedin.com/in/leslietolbert" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="http://instagram.com/lesssliemarie" target="_blank"><i class="fa fa-instagram"></i></a>
           <a href="mailto:lesssliemarie@gmail.com"><i class="fa fa-envelope"></i></a>
           @if (Auth::check())
             <a href="{{{ action('HomeController@logout')}}}" id="login-footer"><i class="fa fa-user"></i> Logout</a>
+          @else
+          <span id="contact" class="cursive">Leslie Marie Tolbert &mdash; lesssliemarie@gmail.com</span>
           @endif
         </p>
       </div>
@@ -70,6 +74,8 @@
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/holder.js"></script>
     <script src="/js/bootbox.min.js"></script>
+    <script src="/js/lettering.min.js"></script>
+    <script src="/js/jquery.textillate.js"></script>
 
     <script>
       setTimeout(function() {
