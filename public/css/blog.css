@@ -87,20 +87,21 @@ i {
 	display: none;
 	width: 50em;
 	margin-bottom: 20px;
-	box-shadow: 2px 6px 10px #c9c9c9;
+	box-shadow: 6px 6px 10px #c9c9c9;
 	float: left;
 }
 
 #hello-world {
 	display: none;
+	margin-top: 50px;
 }
 
 #intro-h2 {
 	display: none;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
-#intro {
+.intro {
 	display: none;
 }
 
@@ -131,8 +132,8 @@ i {
 	color: #E79CF2;
 }
 
-#sidebar {
-	border-left: 1px solid #c9c9c9;
+#main-blog {
+	border-right: 1px solid #c9c9c9;
 }
 
 #sidebar-inset {
@@ -156,6 +157,17 @@ i {
 /* RESUME */
 .resume-row {
 	margin-bottom: 20px;
+}
+
+/* PORTFOLIO */
+
+#lcp-screenshot {
+	border: 1px solid #ddd;
+}
+
+.portfolio-github-icon {
+	font-size: 1em;
+	margin: 0px;
 }
 
 /* ACCESS DENIED PAGE */
