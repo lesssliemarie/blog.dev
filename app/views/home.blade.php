@@ -8,8 +8,11 @@
         	</div>
         	<div class="col-md-6">
         		<h1 id="hello-world" class="cursive">Hello, World.</h1>
-        		<h2 id="intro-h2" class="cursive">Nice to see you! I'm Leslie.</h2>
-        		<p id="intro">Pitchfork McSweeney's trust fund, fixie pug PBR&amp;B fanny pack bitters Tumblr flexitarian. Freegan four loko gluten-free salvia 3 wolf moon. Whatever raw denim +1, leggings squid viral wayfarers gluten-free artisan seitan. Pinterest forage VHS selfies, Thundercats cliche kitsch narwhal semiotics banh mi normcore. Authentic messenger bag scenester food truck roof party Etsy, High Life 3 wolf moon direct trade bespoke. Occupy actually leggings tote bag Vice, ennui synth Blue Bottle Thundercats normcore. Direct trade letterpress locavore Intelligentsia skateboard blog.</p>
+        		<h2 id="intro-h2" class="cursive">Nice to see you! I'm <span clas="purple-text">Leslie.</span></h2>
+        		<p class="intro">I'm a programmer, web developer, designer and recent graduate of Codeup, an 11-week programming bootcamp at Geekdom in downtown San Antonio. I've very much enjoyed learning all aspects of web development and programming during my time at Codeup and look forward to continuing my education and experience in the field while integrating my previous graphic design, marketing, branding, technical writing and creative skills.</p> 
+
+        		<p class="intro">I'd like to find work that promotes growth, creativity, and ingenuity and have a particular interest in User Experience design. I'd <em>love</em> for you to check out my portfolio and r&eacute;sum&eacute;. Like what you see? Let's connect!</p><br>
+    			<h4 class="cursive intro purple-text">Adaptability &mdash; Acheiver &mdash; Ideation &mdash; Intellection &mdash; Empathy</h4>
     		</div>
     	</div>
     	<hr class="interests">
@@ -62,7 +65,7 @@
     	$('#me').fadeIn(1500);
     	$('#hello-world').delay(1100).fadeIn(1500);
     	$('#intro-h2').delay(3100).fadeIn(1500);
-    	$('#intro').delay(3600).fadeIn(1500);
+    	$('.intro').delay(3600).fadeIn(1500);
     	$('.interests').delay(4000).fadeIn(1500);
     	$('#info1').delay(4100).fadeIn(1500);
     	$('#info2').delay(4200).fadeIn(1500);
