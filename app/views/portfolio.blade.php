@@ -1,10 +1,11 @@
 @extends('layouts.master')
 
 @section('content')
+    <div id="wrapper">
     <div>
         <h1 class="cursive">Portfolio</h1>
         <hr>
-      </div>
+    </div>
       <div class="row">
         <div class="col-md-6">
           <img src="/img/lcp-app.png" id="lcp-screenshot" class="img-responsive img-rounded" alt="Screenshot of Local Care Package Web Application">
@@ -17,7 +18,7 @@
       </div>
       <hr>
       <div class="row">
-        <div class="col-xs-6 col-md-4">
+        <div class="col-md-4">
           <a href="http://lesssliemarie.me/" class="thumbnail" target="_blank">
             <img src="/img/blog-screenshot.png" alt="Screenshot of Leslie Tolbert's Laravel Blog Web Application">
           </a>
@@ -28,29 +29,29 @@
           </div>
         </div>
         
-        <div class="col-xs-6 col-md-4">
-          <a href="#" class="thumbnail">
-            <img data-src="holder.js/100%x180" alt="...">
+        <div class="col-md-4">
+          <a href="https://chrome.google.com/webstore/detail/red-panda-tv/cbnohlbedooafamnkjigohfbbpjhhlmj" class="thumbnail" target="_blank">
+            <img src="/img/redpandatv.png" class="img-responsnive" alt="Screenshot of Red Panda TV Chrome Extension">
           </a>
           <div class="caption">
-            <h3>Project Title</h3>
-            <p>Swag stumptown hella retro, next level seitan pug bicycle rights distillery art party Cosby sweater Thundercats cliche hoodie. Pork belly art party vegan put a bird on it, craft beer mumblecore flexitarian.</p>
-            <p><a href="#" class="btn btn-primary" role="button">View Project <span class="glyphicon glyphicon-arrow-right"></span></a></p>
+            <h3>Red Panda TV Chrome Extension</h3>
+            <p>As Tex Morgan said in his lunch time talk at Codeup, sometimes you just need to take a break to look at adorable red pandas, especially after coding for hours on end. This extension features a pop-up window that will play a random red panda video from YouTube. Built using JavaScript, HTML, and CSS. Download it to your browswer and start feeling the positive effects of Red Panda TV today!</p>
+            <p><a href="https://chrome.google.com/webstore/detail/red-panda-tv/cbnohlbedooafamnkjigohfbbpjhhlmj" class="btn btn-primary" role="button">Download <span class="glyphicon glyphicon-arrow-right"></span></a> <a href="https://github.com/lesssliemarie/chrome-extensions/tree/master/redpandatv" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></a></span></p>
           </div>
         </div>
 
-        <div class="col-xs-6 col-md-4">
-          <a href="#" class="thumbnail">
-            <img data-src="holder.js/100%x180" alt="...">
+        <div class="col-md-4">
+          <a href="{{{ action('HomeController@showSpiral') }}}" class="thumbnail" target="_blank">
+            <img src="/img/spiral.png" class="img-responsnive" alt="Screenshot of Spiral Note-taking Web Application">
           </a>
           <div class="caption">
-            <h3>Project Title</h3>
-            <p>Swag stumptown hella retro, next level seitan pug bicycle rights distillery art party Cosby sweater Thundercats cliche hoodie. Pork belly art party vegan put a bird on it, craft beer mumblecore flexitarian.</p>
-            <p><a href="#" class="btn btn-primary" role="button">View Project <span class="glyphicon glyphicon-arrow-right"></span></a></p>
+            <h3>Spiral Note-taking Application</h3>
+            <p>One-page application for writing and saving notes. Built using JavaScript, jQuery, Twitter Bootstrap, wysiwyg Summernote text editor plugin and Firebase. Development done with simple built-in HTTP Python server on Mac. Features ability to add subject tabs, saves and shows tab information to Firebase in real time. Final project of HotSauceJS class (6-weeks, once a week meetup).</p>
+            <p><a href="{{{ action('HomeController@showSpiral') }}}" class="btn btn-primary" role="button">View Live <span class="glyphicon glyphicon-arrow-right"></span></a> <a href="https://github.com/lesssliemarie/spiral" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></a></span></p>
           </div>
         </div>
 
       </div>
 
-      </div>
+    </div>
 @stop
