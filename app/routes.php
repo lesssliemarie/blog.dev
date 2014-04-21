@@ -21,6 +21,8 @@ Route::get('/blog', 'HomeController@showBlog');
 
 Route::get('/resume', 'HomeController@showResume');
 
+Route::get('/spiral', 'HomeController@showSpiral');
+
 Route::get('/login', 'HomeController@showLogin');
 
 Route::post('/login', 'HomeController@doLogin');

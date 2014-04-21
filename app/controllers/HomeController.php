@@ -40,6 +40,11 @@ class HomeController extends BaseController {
 		return View::make('resume');
 	}
 
+	public function showSpiral()
+	{
+		return View::make('spiral');
+	}
+
 	public function showLogin()
 	{
 		return View::make('login');
