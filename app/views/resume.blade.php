@@ -114,3 +114,11 @@
       </div>
     </div>
 @stop
+
+@section('bottomscript')
+<script>
+  $(document).ready(function() {
+      $('#wrapper').fadeIn(1500);
+  });
+</script>
+@stop

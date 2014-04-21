@@ -166,6 +166,7 @@ i {
 /* PORTFOLIO */
 
 #wrapper {
+	display: none;
 	margin-bottom: 80px;
 }
 

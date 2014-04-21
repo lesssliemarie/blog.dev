@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <div id="blog">
+    <div id="wrapper">
         <h1 class="cursive">lesssliemarie's Blog</h1>
         <hr>
         <div class="row">
@@ -40,4 +40,12 @@
           </div>
         </div>
     </div>
+@stop
+
+@section('bottomscript')
+<script>
+  $(document).ready(function() {
+      $('#wrapper').fadeIn(1500);
+  });
+</script>
 @stop
