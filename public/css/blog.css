@@ -32,7 +32,7 @@ body {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	min-height: 60px;
+	min-height: 100px;
 	background-color: #C5FF17;
 	opacity: 0.4;
 	margin-top: 20px;
@@ -41,12 +41,12 @@ body {
 i {
 	font-size: 2.5em;
 	margin-right: 25px;
-	margin-top: 10px;
+	margin-top: 30px;
 }
 
 #contact {
 	float: right;
-	margin-top: 20px;
+	margin-top: 40px;
 	font-size: 18px
 }
 
@@ -161,6 +161,10 @@ i {
 
 /* PORTFOLIO */
 
+#wrapper {
+	margin-bottom: 50px;
+}
+
 #lcp-screenshot {
 	border: 1px solid #ddd;
 }
@@ -168,6 +172,11 @@ i {
 .portfolio-github-icon {
 	font-size: 1em;
 	margin: 0px;
+}
+
+.thumbnail>img {
+	height: 200px;
+	width: 300px;
 }
 
 /* ACCESS DENIED PAGE */
