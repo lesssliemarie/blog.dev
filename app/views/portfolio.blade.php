@@ -36,7 +36,7 @@
           <div class="caption">
             <h3>Red Panda TV Chrome Extension</h3>
             <p>As Tex Morgan said in his lunch time talk at Codeup, sometimes you just need to take a break to look at adorable red pandas, especially after coding for hours on end. This extension features a pop-up window that will play a random red panda video from YouTube. Built using JavaScript, HTML, and CSS. Download it to your browswer and start feeling the positive effects of Red Panda TV today!</p>
-            <p><a href="https://chrome.google.com/webstore/detail/red-panda-tv/cbnohlbedooafamnkjigohfbbpjhhlmj" class="btn btn-primary" role="button">Download <span class="glyphicon glyphicon-arrow-right"></span></a> <a href="https://github.com/lesssliemarie/chrome-extensions/tree/master/redpandatv" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></a></span></p>
+            <p><a href="https://chrome.google.com/webstore/detail/red-panda-tv/cbnohlbedooafamnkjigohfbbpjhhlmj" class="btn btn-primary" role="button" target="_blank">Download <span class="glyphicon glyphicon-arrow-right"></span></a> <a href="https://github.com/lesssliemarie/chrome-extensions/tree/master/redpandatv" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></a></span></p>
           </div>
         </div>
 
