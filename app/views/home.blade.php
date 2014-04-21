@@ -38,11 +38,11 @@
     	<div class="row info">
     		<div class="col-md-3"  id="info5">
     			<img src="/img/info5.jpg" class="img-responsive img-circle">
-    			<h3 class="cursive">Adventure</h3>
+    			<h3 class="cursive">Experience</h3>
     		</div>
     		<div class="col-md-3"  id="info6">
     			<img src="/img/info6.jpg" class="img-responsive img-circle">
-    			<h3 class="cursive">Exploring</h3>
+    			<h3 class="cursive">Exploration</h3>
     		</div>
     		<div class="col-md-3" id="info7">
     			<img src="/img/info!.jpg" class="img-responsive img-circle">
@@ -54,7 +54,7 @@
     		</div>
     	</div>
     	<hr class="connect">
-    	<h4 class="connect">I'm always on the lookout for more loves to add to the list and constantly seeking <span class="purple-text">connection</span> and <span class="purple-text">inspiration</span>!</h4>
+    	<h4 class="connect">I'm always on the lookout for more loves to add to my list and constantly seeking <span class="purple-text">connection</span> and <span class="purple-text">inspiration</span>!</h4>
     	<h1 class="cursive connect">Need help on a project or have one in mind?<span class="purple-text"> Let's Connect!</span></h1>
     </div>
 @stop
@@ -64,23 +64,19 @@
 	$(document).ready(function() {
     	$('#me').fadeIn(1500);
     	$('#hello-world').delay(1100).fadeIn(1500);
-    	$('#intro-h2').delay(3100).fadeIn(1500);
-    	$('.intro').delay(3600).fadeIn(1500);
-    	$('.interests').delay(4000).fadeIn(1500);
-    	$('#info1').delay(4100).fadeIn(1500);
-    	$('#info2').delay(4200).fadeIn(1500);
-    	$('#info3').delay(4300).fadeIn(1500);
-    	$('#info4').delay(4400).fadeIn(1500);
-    	$('#info5').delay(4500).fadeIn(1500);
-    	$('#info6').delay(4600).fadeIn(1500);
-    	$('#info7').delay(4700).fadeIn(1500);
-    	$('#info8').delay(4800).fadeIn(1500);
-    	$('.connect').delay(5000).fadeIn(1500);
+    	$('#intro-h2').delay(2600).fadeIn(1500);
+    	$('.intro').delay(4100).fadeIn(1500);
+    	$('.interests').delay(5000).fadeIn(1500);
+    	$('#info1').delay(5100).fadeIn(1500);
+    	$('#info2').delay(5200).fadeIn(1500);
+    	$('#info3').delay(5300).fadeIn(1500);
+    	$('#info4').delay(5400).fadeIn(1500);
+    	$('#info5').delay(5500).fadeIn(1500);
+    	$('#info6').delay(5600).fadeIn(1500);
+    	$('#info7').delay(5700).fadeIn(1500);
+    	$('#info8').delay(5800).fadeIn(1500);
+    	$('.connect').delay(6000).fadeIn(1500);
 	});
-
-	// $('#test-circle').mouseover(function() {
- //    	$(this).stop().animate({ width: '110%' }, 500);
-	// });
 
 </script>
 @stop
