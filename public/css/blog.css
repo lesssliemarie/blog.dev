@@ -35,7 +35,7 @@ body {
 	min-height: 100px;
 	background-color: #C5FF17;
 	opacity: 0.4;
-	margin-top: 20px;
+	margin-top: 50px;
 }
 
 i {
@@ -80,7 +80,7 @@ i {
 #home {
 	text-align: center;
 	margin-top: 20px;
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 }
 
 #me {
@@ -134,6 +134,8 @@ i {
 
 #main-blog {
 	border-right: 1px solid #c9c9c9;
+	min-height: 400px;
+	margin-bottom: 80px;
 }
 
 #sidebar-inset {
@@ -156,13 +158,13 @@ i {
 
 /* RESUME */
 .resume-row {
-	margin-bottom: 20px;
+	margin-bottom: 80px;
 }
 
 /* PORTFOLIO */
 
 #wrapper {
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 }
 
 #lcp-screenshot {
