@@ -58,7 +58,6 @@
           <a href="https://twitter.com/lesssliemarie" target="_blank"><i class="fa fa-twitter"></i></a>
           <a href="https://github.com/lesssliemarie" target="_blank"><i class="fa fa-github"></i></a>
           <a href="http://www.linkedin.com/in/leslietolbert" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <a href="http://instagram.com/lesssliemarie" target="_blank"><i class="fa fa-instagram"></i></a>
           <a href="mailto:lesssliemarie@gmail.com"><i class="fa fa-envelope"></i></a>
           @if (Auth::check())
             <a href="{{{ action('HomeController@logout')}}}" id="login-footer"><i class="fa fa-user"></i> Logout</a>
