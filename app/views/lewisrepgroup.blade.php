@@ -31,7 +31,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href=""><img id="logo" src="/img/images/lewis&companylogo.png" alt="Lewis & Company Logo"></a>
+        <a class="navbar-brand" href="#top"><img id="logo" src="/img/images/lewis&companylogo.png" alt="Lewis & Company Logo"></a>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -45,7 +45,7 @@
     </div>
   </nav>
 
-  <div id="carousel" class="container">
+  <div id="carousel" id="top" class="container">
     <div id="carousel-main" class="carousel slide" data-ride="carousel">
 
       <ol class="carousel-indicators">
