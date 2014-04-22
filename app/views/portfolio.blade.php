@@ -71,7 +71,7 @@
           <div class="caption">
             <h3>Santex Painting &amp; Drywall Website</h3>
             <p>I was hired by Santext Paiting &amp; Drywall to re-vamp their logo and branding as well as set up a Squarespace site for staff to maintain. After generating a logo, color palette, brand goals and website layout, I also assisted in the editing and placement of content and trained the staff for future site maintenance.</p>
-            <p><a href="http://www.santexconstruction.com/" class="btn btn-primary" role="button" target="_blank">Download <span class="glyphicon glyphicon-arrow-right"></span></a></p>
+            <p><a href="http://www.santexconstruction.com/" class="btn btn-primary" role="button" target="_blank">View Live <span class="glyphicon glyphicon-arrow-right"></span></a></p>
           </div>
         </div>
 
@@ -82,7 +82,7 @@
           <div class="caption">
             <h3>Alphabet Soup</h3>
             <p>Alphabet Soup is a simple game that was a Codeup challenge for class after hours. I began solving the challenge in PHP and then translated the same code into JavaScript for implementation into a one-page, browser friendly game. Built in both PHP and JavaScript with jQuery, Bootstrap,  and Textillate.js.</p>
-            <p><a href="{{{ action('HomeController@showSoup') }}}" class="btn btn-primary" role="button">View Live <span class="glyphicon glyphicon-arrow-right"></span></a> <a href="https://github.com/lesssliemarie/spiral" class="btn btn-primary btn-github" role="button" target="_blank"> GitHub JS<span><i class="fa fa-github portfolio-github-icon"></i></a></span><a href="https://github.com/lesssliemarie/codeup_excercises/blob/master/codeup_challenges/alphabetsoup.php" role="button" target="_blank"> GitHub PHP<span><i class="fa fa-github portfolio-github-icon"></i></a></span></p>
+            <p><a href="{{{ action('HomeController@showSoup') }}}" class="btn btn-primary" role="button">View Live <span class="glyphicon glyphicon-arrow-right"></span></a> <a href="https://github.com/lesssliemarie/blog.dev/blob/master/app/views/alphabet-soup.blade.php" class="btn btn-primary" role="button" target="_blank"> GitHub JS<span><i class="fa fa-github portfolio-github-icon"></i></a></span> <a href="https://github.com/lesssliemarie/codeup_excercises/blob/master/codeup_challenges/alphabetsoup.php" class="btn btn-primary" role="button" target="_blank"> GitHub PHP<span><i class="fa fa-github portfolio-github-icon"></i></a></span></p>
           </div>
         </div>
 
