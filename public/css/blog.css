@@ -184,6 +184,10 @@ i {
 	width: 300px;
 }
 
+.thumbs {
+	margin-bottom: 20px;
+}
+
 /* ACCESS DENIED PAGE */
 .fa-ban {
 	color: #FF0000;
