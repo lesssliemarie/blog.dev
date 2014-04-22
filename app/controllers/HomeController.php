@@ -45,6 +45,16 @@ class HomeController extends BaseController {
 		return View::make('spiral');
 	}
 
+	public function showLC()
+	{
+		return View::make('lewisrepgroup');
+	}
+
+	public function showSoup()
+	{
+		return View::make('alphabet-soup');
+	}
+
 	public function showLogin()
 	{
 		return View::make('login');

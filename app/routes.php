@@ -23,6 +23,10 @@ Route::get('/resume', 'HomeController@showResume');
 
 Route::get('/spiral', 'HomeController@showSpiral');
 
+Route::get('/lewisrepgroup', 'HomeController@showLC');
+
+Route::get('/alphabet-soup', 'HomeController@showSoup');
+
 Route::get('/login', 'HomeController@showLogin');
 
 Route::post('/login', 'HomeController@doLogin');
