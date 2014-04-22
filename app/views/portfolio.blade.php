@@ -17,7 +17,7 @@
         </div>
       </div>
       <hr>
-      <div class="row">
+      <div class="row thumbs">
         <div class="col-md-4">
           <a href="http://lesssliemarie.me/" class="thumbnail" target="_blank">
             <img src="/img/blog-screenshot.png" alt="Screenshot of Leslie Tolbert's Laravel Blog Web Application">
@@ -25,7 +25,7 @@
           <div class="caption">
             <h3>Laravel Blog Project</h3>
             <p>This application is built for writing and viewing blog posts as well as my personal portfolio and resume. Built using Laravel, PHP, MySQL, JavaScript, jQuery, Twitter Bootstrap, CKeditor text editor plugin, Disqus commenting system. Development done in a Vagrant environment. Version control using Git and GitHub. Features user logins, blog post creation and viewing, image upload, search functionality, and ability for authors to edit posts.</p>
-            <p><a href="http://lesssliemarie.me/" class="btn btn-primary" role="button">View Live <span class="glyphicon glyphicon-arrow-right"></span></a> <a href="https://github.com/lesssliemarie/blog.dev" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></a></span></p>
+            <p><a href="http://lesssliemarie.me/" class="btn btn-primary" role="button" target="_blank">View Live <span class="glyphicon glyphicon-arrow-right"></span></a> <a href="https://github.com/lesssliemarie/blog.dev" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></a></span></p>
           </div>
         </div>
         
@@ -47,12 +47,12 @@
           <div class="caption">
             <h3>Spiral Note-taking Application</h3>
             <p>One-page application for writing and saving notes. Built using JavaScript, jQuery, Twitter Bootstrap, wysiwyg Summernote text editor plugin and Firebase. Development done with simple built-in HTTP Python server on Mac. Features ability to add subject tabs, saves and shows tab information to Firebase in real time. Final project of HotSauceJS class (6-weeks, once a week meetup).</p>
-            <p><a href="{{{ action('HomeController@showSpiral') }}}" class="btn btn-primary" role="button">View Live <span class="glyphicon glyphicon-arrow-right"></span></a> <a href="https://github.com/lesssliemarie/spiral" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></a></span></p>
+            <p><a href="{{{ action('HomeController@showSpiral') }}}" class="btn btn-primary" role="button" target="_blank">View Live <span class="glyphicon glyphicon-arrow-right"></span></a> <a href="https://github.com/lesssliemarie/spiral" class="btn btn-primary btn-github" role="button" target="_blank"> View GitHub <span><i class="fa fa-github portfolio-github-icon"></i></a></span></p>
           </div>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row thumbs">
         <div class="col-md-4">
           <a href="{{{ action('HomeController@showLC') }}}" class="thumbnail" target="_blank">
             <img src="/img/l&c-screenshot.png" alt="Screenshot of Lewis & Company's Website">
@@ -60,7 +60,7 @@
           <div class="caption">
             <h3>Lewis &amp; Company Website</h3>
             <p>This is a one-page website currently in progress for Lewis &amp; Company, one of Texas' most valued furniture manufacturer representatives. Built using HTML/CSS, jQuery, JavaScript, and Twitter Bootstrap. Currently generating content and involved in the marketing and copywriting aspects as well as the design and build of the website.</p>
-            <p><a href="{{{ action('HomeController@showLC') }}}" class="btn btn-primary" role="button">View Live <span class="glyphicon glyphicon-arrow-right"></span></a></p>
+            <p><a href="{{{ action('HomeController@showLC') }}}" class="btn btn-primary" role="button" target="_blank">View Live <span class="glyphicon glyphicon-arrow-right"></span></a></p>
           </div>
         </div>
         
