@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head profile="http://blog.dev/">
+<head profile="http://lesssliemarie.me/">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" type="http://blog.dev/lmt.png">
+    <link rel="icon" type="image/png" type="http://lesssliemarie.me/lmt.png">
     <title>Leslie Tolbert &mdash; Hello!</title>
 
     <!-- CSS -->
